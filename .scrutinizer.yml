@@ -1,0 +1,30 @@
+filter:
+    paths: ["src/"]
+checks:
+    php: true
+build:
+    nodes:
+        php72:
+            environment:
+                php:
+                    version: "7.2"
+        php73:
+            environment:
+                php:
+                    version: "7.3"
+        php74:
+            environment:
+                php:
+                    version: "7.4"
+        analysis:
+            environment:
+                php:
+                    version: "7.3"
+            tests:
+                override:
+                    - php-scrutinizer-run
+                    -
+                        command: 'vendor/bin/phpunit --coverage-clover=coverage-clover'
+                        coverage:
+                            file: 'coverage-clover'
+                            format: 'clover'
