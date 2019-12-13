@@ -4,10 +4,6 @@ checks:
     php: true
 build:
     nodes:
-        php71:
-            environment:
-                php:
-                    version: "7.1"
         php72:
             environment:
                 php:
