@@ -1,0 +1,34 @@
+{
+    "name": "arcesilas/md-word-count",
+    "description": "Count words in a markdown document",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arcesilas",
+            "email": "arcesilas@neutre.email"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpunit/phpunit": "^8",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arcesilas\\MdWordCount\\": "src/"
+        },
+        "files": ["helpers.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arcesilas\\MdWordCount\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "check-style": "vendor/bin/phpcs"
+    },
+    "bin": ["bin/mdwc"]
+}

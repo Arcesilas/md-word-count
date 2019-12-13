@@ -1,0 +1,20 @@
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd"
+    bootstrap="./vendor/autoload.php"
+    colors="true">
+    <testsuites>
+        <testsuite name="md-word-count">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+            <file>./helpers.php</file>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./.coverage"/>
+    </logging>
+</phpunit>

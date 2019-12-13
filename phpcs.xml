@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Standard">
+    <arg name="colors"/>
+    <arg value="s"/>
+    <arg name="basepath" value="./"/>
+
+    <rule ref="PSR1"/>
+    <rule ref="PSR12"/>
+
+    <!-- Exclude migrations and seeders -->
+    <rule ref="PHPCompatibility"/>
+    <config name="testVersion" value="7.0-"/>
+    <config name="installed_paths" value="vendor/phpcompatibility/php-compatibility" />
+
+    <file>src/</file>
+    <file>tests/</file>
+</ruleset>
