@@ -1,3 +1,11 @@
+[![GitHub license](https://img.shields.io/github/license/Arcesilas/md-word-count?style=flat-square)](https://github.com/Arcesilas/md-word-count/blob/develop/LICENSE.md)
+![PHP from Packagist](https://img.shields.io/packagist/php-v/arcesilas/md-word-count?style=flat-square)
+![Packagist Version](https://img.shields.io/packagist/v/arcesilas/md-word-count?style=flat-square)
+![Scrutinizer build](https://img.shields.io/scrutinizer/build/g/Arcesilas/md-word-count?style=flat-square)
+![Scrutinizer coverage](https://img.shields.io/scrutinizer/coverage/g/arcesilas/md-word-count?style=flat-square)
+![Scrutinizer code quality](https://img.shields.io/scrutinizer/quality/g/arcesilas/md-word-count?style=flat-square)
+
+
 # MdWordCount
 
 > This package is a port in PHP of [Markdown Word Count](https://github.com/gandreadis/markdown-word-count) for Python3.
